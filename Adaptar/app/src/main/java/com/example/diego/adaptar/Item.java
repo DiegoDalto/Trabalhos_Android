@@ -3,7 +3,7 @@ package com.example.diego.adaptar;
 import java.io.Serializable;
 
 /**
- * Created by jose on 21/01/2016.
+ * Created by Dalto on 21/01/2016.
  */
 public class Item implements Serializable {
     private String nome;
@@ -18,7 +18,7 @@ public class Item implements Serializable {
         this.imagem = imagem;
     }
 
-    public Item(String nome, String telefone, int imagem) {
+    public Item() {
         this.nome = nome;
         this.telefone = telefone;
         this.imagem = imagem;

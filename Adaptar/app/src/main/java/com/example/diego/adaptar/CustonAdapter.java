@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by jose on 21/01/2016.
+ * Created by Dalto on 21/01/2016.
  */
 public class CustonAdapter extends BaseAdapter {
     private LayoutInflater layoutInflater;
