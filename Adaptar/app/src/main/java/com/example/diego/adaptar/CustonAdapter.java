@@ -8,17 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Dalto on 21/01/2016.
  */
 public class CustonAdapter extends BaseAdapter {
     private LayoutInflater layoutInflater;
-    private ArrayList<Item>itens;
+    private List<Item> itens;
 
 
-    public CustonAdapter(ArrayList<Item> itens,Context context) {
+    public CustonAdapter(List<Item> itens,Context context) {
         this.itens = itens;
         layoutInflater = LayoutInflater.from(context);
     }
@@ -50,11 +50,11 @@ public class CustonAdapter extends BaseAdapter {
 
 
         //((TextView) view.findViewById(R.id.data)).setText(miniCurso.getData());
-        ImageView imagem = (ImageView) convertView.findViewById(R.id.imageView);
-        imagem.setImageResource(item.getImagem());
+        ((ImageView)convertView.findViewById(R.id.imageView)).setImageResource(item.getImagem());
 
-        ((TextView)convertView.findViewById(R.id.tvNome)).setText(item.getNome());
+        ((TextView) convertView.findViewById(R.id.tvNome)).setText(item.getNome());
         ((TextView)convertView.findViewById(R.id.tvValor)).setText(item.getTelefone());
+
 
         return convertView;
     }
